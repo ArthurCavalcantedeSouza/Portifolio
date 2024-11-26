@@ -1,0 +1,145 @@
+body {
+    width: 100%; /* O corpo ocupará toda a largura da tela */
+    height: 100%; /* O corpo ocupará toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+}
+ 
+.center {
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 500px; /* Altura ajustada para o banner */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o espaço */
+}
+ 
+    .center h2{
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+ 
+    .center {
+            display: flex; /* Ativa o layout flexbox */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* Centraliza os itens verticalmente */
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir o espaço */
+ }
+ 
+.container-fluid {
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo do menu */
+}
+ 
+.navbar-brand {
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo para o texto "Portifólio" */
+}
+ 
+.offcanvas-header {
+    background-color: rgb(0, 0, 0); /* Define a cor de fundo do cabeçalho do menu lateral */
+}
+ 
+ 
+.container-cards {
+    display: flex; /* Organiza os cards lado a lado */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 1.5rem; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+    margin: 2rem auto; /* Espaçamento do container e centralização */
+}
+ 
+ 
+.card {
+    padding: 1rem; /* Espaçamento do texto entre o card */
+    width: 650px; /* Largura fixa do card */
+    display: flex;
+    flex-direction: column; /* Elementos dentro do card organizados verticalmente */
+    border-radius: 0.5rem; /* Borda arredondada */  
+    color: white; /* Cor do texto */
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+}
+ 
+.card img {
+    width: 100%; /* Faz com que a imagem seja responsiva dentro do card */
+    max-width: 200px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 1rem; /* Borda arredondada para as imagens */
+    margin-bottom: 1rem; /* Espaço entre a imagem e o conteúdo do card */
+}
+ 
+.card h1 {
+    font-size: 1.5rem; /* Tamanho do texto do título */
+    margin: 1rem 0; /* Espaçamento acima e abaixo do título */
+    color: rgb(255, 255, 255);
+    position: center;
+}
+ 
+.card p {
+    text-align: justify; /* Texto alinhado à esquerda e à direita */
+    margin: 1rem 0; /* Espaçamento acima e abaixo do texto */
+    color: rgb(255, 255, 255);
+}
+ 
+.card-2 {
+    padding: 1rem; /* Espaçamento interno do card */
+    width: 550px; /* Largura fixa do card */
+    display: flex;
+    flex-direction: column; /* Elementos dentro do card organizados verticalmente */
+    border-radius: 0.5rem; /* Borda arredondada */
+    color: white; /* Cor do texto */
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+    columns: 2;
+}
+ 
+.card-2 img {
+    width: 100%; /* Faz com que a imagem seja responsiva dentro do card */
+    max-width: 250px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 1rem; /* Borda arredondada para as imagens */
+    margin-bottom: 1rem; /* Espaço entre a imagem e o conteúdo do card */
+}
+ 
+.card-2 h1 {
+    font-size: 1.5rem; /* Tamanho do texto do título */
+    margin: 1rem 0; /* Espaçamento acima e abaixo do título */
+}
+ 
+.card-2 ul {
+    text-align: justify; /* Texto alinhado à esquerda e à direita */
+    margin: 1rem 0; /* Espaçamento acima e abaixo da lista */
+}
+
+
+ 
+.card-3{
+    padding: 1rem; /* Espaçamento interno do card */
+    width: 750px; /* Largura fixa do card */
+    display: flex;
+    flex-direction: column; /* Elementos dentro do card organizados verticalmente */
+    border-radius: 0.5rem; /* Borda arredondada */  
+    color: white; /* Cor do texto */
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+}
+ 
+.card-3 h1{
+    text-align: justify; /* Texto alinhado à esquerda e à direita */
+    margin: 1rem 0; /* Espaçamento acima e abaixo da lista */
+}
+ 
+.card-3{
+    text-align: justify; /* Texto alinhado à esquerda e à direita */
+    margin: 1rem 0; /* Espaçamento acima e abaixo da lista */
+}
+ 
+ 
+@media (max-width: 768px) {
+ 
+    .center{
+        flex-direction: column; /* Empilha os cards verticalmente em telas menores */
+    }
+ 
+    .container-cards {
+        flex-direction: column; /* Empilha os cards verticalmente em telas menores */
+    }
+ 
+    .card, .card-2{
+        width: 90%; /* Faz os cards ocuparem quase toda a largura da tela */
+        margin: 0 auto; /* Centraliza os cards em telas pequenas */
+    }
+}
